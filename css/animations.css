@@ -1,0 +1,66 @@
+/* ==========================================================================
+   ESTILOS Y CONTROLES PARA EL LOADER CINEMATOGRÁFICO
+   ========================================================================== */
+.cinema-loader {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: var(--black);
+    z-index: 9999;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; overflow: hidden;
+}
+
+.loader-content {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 1.8rem; padding: 2rem;
+    width: 100%;
+}
+
+/* Escalamiento perfecto y resplandor para el archivo logo.pro.png */
+.loader-brand-img-pro {
+    width: 100%;
+    max-width: 440px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 35px rgba(215, 154, 25, 0.5));
+}
+
+.loader-subtitle {
+    font-family: var(--font-text);
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    color: var(--white);
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.loader-welcome {
+    font-family: var(--font-logo);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    color: var(--gold3);
+    letter-spacing: 2px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+/* ==========================================================================
+   INTERFACES DINÁMICAS Y SELECCIONES SWIPER
+   ========================================================================== */
+.glass-morphism { position: relative; }
+.glass-morphism::before {
+    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    border-radius: inherit; background: linear-gradient(135deg, rgba(248, 213, 108, 0.2), transparent 60%);
+    opacity: 0; transition: opacity 0.4s ease; pointer-events: none; z-index: -1;
+}
+.glass-morphism:hover::before { opacity: 1; }
+
+.swiper-pagination-bullet { background: rgba(255, 255, 255, 0.3) !important; opacity: 1; }
+.swiper-pagination-bullet-active {
+    background: linear-gradient(135deg, var(--gold3), var(--gold4)) !important;
+    box-shadow: 0 0 10px rgba(215, 154, 25, 0.8);
+}
+
+.swiper-button-next, .swiper-button-prev { color: var(--gold3) !important; transform: scale(0.7); transition: all 0.3s ease; }
+.swiper-button-next:hover, .swiper-button-prev:hover { color: var(--gold4) !important; transform: scale(0.8); }

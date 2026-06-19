@@ -1,0 +1,182 @@
+/* ==========================================================================
+   ESTILOS ADICIONALES: BENEFICIOS Y TESTIMONIOS (style.css Continuación)
+   ========================================================================== */
+
+/* Bloque de Beneficios (4 Tarjetas) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.feature-card {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature-card:hover {
+    border-color: rgba(215, 154, 25, 0.3);
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 10px rgba(215, 154, 25, 0.4));
+}
+
+.feature-card h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+/* Carrusel de Testimonios */
+.testimonials-section {
+    max-width: 900px;
+}
+
+.testimonial-card {
+    padding: 3rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.testimonial-author {
+    color: var(--gold3);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Redes Sociales y Footer */
+.main-footer {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--font-btn);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--gold3);
+    text-shadow: 0 0 10px rgba(215, 154, 25, 0.6);
+}
+
+.footer-credits {
+    font-size: 0.8rem;
+    opacity: 0.4;
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================================================
+   BREAKPOINTS DE RESPONSIVE DESIGN (responsive.css)
+   ========================================================================== */
+
+/* 1. Ajustes para Tablets e Ipads (Media-Query: 768px) */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 1rem;
+    }
+    
+    .hero-products-list {
+        margin-top: 2rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-whatsapp-pulse {
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        font-size: 0.85rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .social-links {
+        gap: 1.5rem;
+        flex-direction: row;
+    }
+}
+
+/* 2. Ajustes Críticos para Smartphones (Media-Query: 480px) */
+@media (max-width: 480px) {
+    .hero-products-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* 100% de ancho en móvil */
+    }
+
+    .product-card-img-container {
+        height: 260px; /* Reducción de tarjetas en pantallas ultra compactas */
+    }
+
+    .whatsapp-floating-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-svg {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+/* 3. Optimización para Pantallas Gigantes e iMacs 4K (Media-Query: 1800px) */
+@media (min-width: 1800px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 Columnas perfectas en Ultra-Wide */
+        gap: 3.5rem;
+    }
+
+    .modal-content {
+        max-width: 1300px; /* El modal se expande con armonía */
+    }
+
+    .modal-swiper-img {
+        height: 550px;
+    }
+}

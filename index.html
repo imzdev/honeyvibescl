@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo.pro.png">
+    <title>HoneyVibesCL </title>
+    <meta name="description" content="Descubre nuestros productos premium: Royal Honey, Black Leopard, Honey Female y Gummies Afrodisíacas. Envíos a todo Chile.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <div id="cinema-loader" class="cinema-loader">
+        <div class="loader-content">
+            <img src="img/logo.pro.png" alt="HoneyVibesCL Premium" class="loader-brand-img">
+            <p class="loader-subtitle">"La verdadera miel"</p>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden-content">
+
+        <header class="hero-section">
+            <div class="hero-container" data-aos="zoom-out" data-aos-duration="1500">
+                <div class="hero-logo-wrapper">
+                    <img src="img/logo.pro.png" alt="HoneyVibesCL" class="hero-logo-main">
+                </div>
+                <h2 class="hero-tagline">LA VERDADERA MIEL</h2>
+                
+                <p class="hero-products-list">Royal Honey • Black Leopard • Honey Female Libido Booster & Gummies Afrodisíacas </p>
+                <p class="hero-shipping">Envíos a todo Chile • Disponibilidad inmediata<br><strong>Compra discreta & segura <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: middle;">
+                <path d="M5 12L10 17L20 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></strong></p>
+                
+                <a href="https://wa.me/56936545303?text=Hola%20HoneyVibesCL,%20me%20gustaría%20recibir%20más%20información." class="btn-whatsapp-pulse" target="_blank" rel="noopener noreferrer">
+                    CONTACTAR POR WHATSAPP
+                </a>
+            </div>
+        </header>
+
+        <section id="catalog" class="catalog-section" data-aos="fade-up">
+            <div class="section-title-wrapper">
+                <h2 class="section-title">Nuestro Catálogo</h2>
+                <div class="gold-divider"></div>
+            </div>
+            
+            <div id="products-grid" class="products-grid">
+                </div>
+        </section>
+
+        <div id="product-modal" class="product-modal hidden-modal">
+            <div class="modal-content glass-morphism">
+                <button id="close-modal" class="close-modal">&times;</button>
+                
+                <div class="modal-layout">
+                    <div class="modal-gallery">
+                        <div class="swiper product-swiper">
+                            <div class="swiper-wrapper" id="modal-slider-wrapper">
+                                </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-info">
+                        <h3 id="modal-product-name" class="product-title">Nombre Producto</h3>
+                        <p id="modal-product-tagline" class="product-modal-tagline">Tagline</p>
+                        
+                        <div class="product-block">
+                            <h4>¿Qué contiene?</h4>
+                            <ul id="modal-product-includes" class="modal-list"></ul>
+                        </div>
+
+                        <div class="product-block">
+                            <h4>Beneficios</h4>
+                            <div id="modal-product-benefits" class="benefits-container"></div>
+                        </div>
+
+                        <div class="accordion-wrapper">
+                            <div class="accordion-item">
+                                <button class="accordion-trigger">Cómo consumir <span>+</span></button>
+                                <div class="accordion-content"><p id="modal-product-usage"></p></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-trigger">Indicaciones <span>+</span></button>
+                                <div class="accordion-content"><p id="modal-product-indications"></p></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-trigger">Precauciones <span>+</span></button>
+                                <div class="accordion-content"><p id="modal-product-precautions"></p></div>
+                            </div>
+                        </div>
+
+                        <a id="modal-whatsapp-btn" href="#" class="btn-product-buy" target="_blank" rel="noopener noreferrer">
+                            Me interesa este producto
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="features-section">
+            <div class="features-grid">
+                <!-- Calidad Premium (Diamante de Lujo Estilizado) -->
+                <div class="feature-card glass-morphism" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Corona superior del diamante -->
+                            <path d="M6 7L3 11H21L18 7H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <!-- Facetas superiores -->
+                            <path d="M6 7L9 11M18 7L15 11" stroke="currentColor" stroke-width="1.2"/>
+                            <path d="M12 7V11" stroke="currentColor" stroke-width="1.2"/>
+                            <!-- Pabellón / Base inferior apuntando hacia abajo -->
+                            <path d="M3 11L12 21L21 11H3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <!-- Facetas inferiores que dan profundidad -->
+                            <path d="M9 11L12 21L15 11" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                            
+                            <!-- Pequeño destello premium superior derecho (Estrella de 4 puntas) -->
+                            <path d="M20 3C20 4.5 20.5 5 22 5C20.5 5 20 5.5 20 7C20 5.5 19.5 5 18 5C19.5 5 20 4.5 20 3Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Calidad Premium</h3>
+                </div>
+
+                <div class="feature-card glass-morphism" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 15H17M17 15H22V10H17V15ZM17 15V7H6V15M6 15H2M6 15C6 16.1 6.9 17 8 17C9.1 17 10 16.1 10 15M17 15C17 16.1 17.9 17 19 17C20.1 17 21 16.1 21 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 10H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Envíos a todo Chile</h3>
+                </div>
+
+                <div class="feature-card glass-morphism" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6 21V19C6 16.7909 7.79086 15 10 15H14C16.2091 15 18 16.7909 18 19V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Atención Personalizada</h3>
+                </div>
+
+                <div class="feature-card glass-morphism" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrapper">
+                        <svg class="feature-svg-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5" y="11" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 11V7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Compra Segura</h3>
+                </div>
+            </div>
+        </section>
+
+       <section class="testimonials-section" data-aos="fade-up">
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <!-- CLIENTE 1 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Excelente calidad y envío muy rápido a La Serena. Totalmente recomendado."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+                    <!-- CLIENTE 2 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"El producto cumple al 100 % con lo esperado y la atención por WhatsApp fue muy fluida. Muy conforme con la compra."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+                    <!-- CLIENTE 3 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Las gomitas son buenas, pero las mieles son mejores. Recomendado 100%."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 4 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Bro, excelente. Totalmente recomendable, certero y confiable."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 5 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Súper buenas las mieles. Tuve una muy buena experiencia. Totalmente recomendado."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 6 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Compañero, excelente producto. Recomendable al 99 %, porque el 100 % con las mieles."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 7 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Buen producto, bro. Llegaron súper rápido a Coyhaique."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 8 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Buena, compa. Todo bien, certeras las mieles. Activos en Coquimbo."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 9 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Me dijiste que las mieles eran buenas, pero no pensé que tanto. Totalmente recomendadas."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+                    <!-- CLIENTE 10 -->
+                    <div class="swiper-slide glass-morphism testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Recomendado, compa. Llegó todo bien a Puerto Montt y gracias por las gomitas de regalo."</p>
+                        <div class="testimonial-badge">
+                            <svg class="verified-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#d79a19" opacity="0.2"/>
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d79a19" stroke-width="1.5"/>
+                                <path d="M9 12L11 14L15 10" stroke="#d79a19" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Comprador Verificado</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="social-links">
+                <a href="https://www.instagram.com/honeyvibescl?utm_source=qr" class="social-icon" target="_blank">Instagram</a>
+                <a href="https://www.tiktok.com/@honeyvibescl?_r=1&_t=ZS-97KY8kaIRNd" class="social-icon" target="_blank">TikTok</a>
+                <a href="https://wa.me/56936545303" class="social-icon" target="_blank">WhatsApp</a>
+            </div>
+            <p class="footer-credits">&copy; 2026 HoneyVibesCL. Todos los derechos reservados.</p>
+        </footer>
+
+        <a href="https://wa.me/56936545303?text=Hola%20HoneyVibesCL,%20solicito%20disponibilidad%20del%20catálogo." class="whatsapp-floating-btn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 32 32" class="whatsapp-svg"><path d="M16 2a13 13 0 0 0-11.23 19.55L3 29l7.7-1.95A13 13 0 1 0 16 2zm6.75 18.84c-.27.76-1.35 1.4-1.89 1.48-.48.07-.1.35-2.84-1-3.23-1.57-5.26-4.9-5.42-5.12s-1.31-1.78-1.31-3.4 1.1-2.4 1.34-2.65.54-.3.7-.3.33 0 .49.03.4.1.57.51.59 1.49.65 1.62.1.27.03.43c-.08.16-.19.27-.32.43-.14.14-.3.33-.43.46-.14.14-.3.3-.13.57A8.2 8.2 0 0 0 14.9 16a10.1 10.1 0 0 0 3.32 2.25c.3.14.46.11.63-.08s.73-.87.92-1.17.38-.25.63-.16 1.6.76 1.87.9.46.22.52.33-.04.79-.31 1.57z"/></svg>
+        </a>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
