@@ -31,7 +31,7 @@ const PRODUCTS_DATA = [
     {
         id: "black-leopard",
         name: "Black Leopard",
-        tagline: "Fórmula de Resistencia Avanzada 🐆",
+        tagline: "Fórmula de Resistencia Avanzada",
         image: "img/producto/black1.png",
         gallery: ["img/producto/black1.png", "img/producto/black2.png"],
         includes: [
